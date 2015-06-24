@@ -1,14 +1,14 @@
 {
-  "name": "VA2.Node.Web",
-  "version": "0.0.0",
+  "name": "via-almese-due-node",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "start": "node server.js"
   },
-  "description": "VA2.Node.Web",
+  "description": "via-almese-due-node",
   "author": {
     "name": "mattia",
-    "email": ""
+    "email": "mattia.richetto@gmail.com"
   },
   "dependencies": {
     "body-parser": "~1.8.1",
