@@ -23,11 +23,13 @@ router.post('/:language', function (req, res) {
         form.save(function (err, form) {
             if (err) {
                 console.log('err: ' + JSON.stringify(err));
+                res.render('error', err);
             }
             else {
                 console.log('a form w/ id: ' + form._id + ' has been successfully saved');
+                res.render('index', model);
             }
-            res.render('index', model);
+            
         })
     }
     //res.render('index', model);
