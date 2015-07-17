@@ -16,9 +16,7 @@ router.get('/:language', function (req, res) {
 
 router.post('/:language', function (req, res) {
     var model = makeViewModel(req);
-
     if (model.isValid) {
-        // todo: !!!
         var form = new Form(model.form);
         form.save(function (err, form) {
             if (err) {
@@ -29,10 +27,11 @@ router.post('/:language', function (req, res) {
                 console.log('a form w/ id: ' + form._id + ' has been successfully saved');
                 res.render('index', model);
             }
-            
         })
     }
-    //res.render('index', model);
+    else {
+        res.render('index', model);
+    }
 });
 
 function makeViewModel(req, contactFormSent) {
