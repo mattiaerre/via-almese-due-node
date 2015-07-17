@@ -99,11 +99,11 @@ LabelRepository.prototype.findAll = function () {
         },
         {
             key: 'errorTitle', values: [
-                { language: 'it', value: 'Errore durante invio modulo' }]
+                { language: 'it', value: 'Errore durante l\'invio del modulo' }]
         },
         {
             key: 'errorText', values: [
-                { language: 'it', value: 'La tua richiesta non e\' stata inviata, ti preghiamo di riprovare.' }]
+                { language: 'it', value: 'Almeno uno tra "Email" e "Numero di telefono" deve essere presente. La tua richiesta non e\' stata inviata, ti preghiamo di riprovare.' }]
         },
         {
             key: 'blockText', values: [
