@@ -7,7 +7,7 @@ var MainViewModelFactory = require('../domain/main-viewmodel-factory');
 var Form = require('../domain/form.server.model')
 
 router.get('/', function (req, res) {
-    res.redirect('/it');
+    res.redirect('/en');
 });
 
 router.get('/:language', function (req, res) {

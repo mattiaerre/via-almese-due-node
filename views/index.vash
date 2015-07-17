@@ -48,7 +48,7 @@
 					</address>
 				</div>
 			</div>
-			<div class="row hidden">
+			<div class="row">
 				<div class="col-md-offset-2 col-md-8">
 					<div class="jumbotron" style="padding: 0.5em !important;">
 						<div id="main-carousel" class="carousel slide" data-ride="carousel">

@@ -7,8 +7,8 @@ function MainViewModelFactory(dictionaryService) {
 };
 
 MainViewModelFactory.prototype.make = function (language, body) {
-    //var languages = [{ value: 'it', label: 'Italiano' }, { value: 'en', label: 'English' }];
-    var languages = [{ value: 'it', label: 'Italiano' }];
+    var languages = [{ value: 'en', label: 'English' }, { value: 'it', label: 'Italiano' }];
+    //var languages = [{ value: 'it', label: 'Italiano' }];
 
     var model = {
         language: language,
