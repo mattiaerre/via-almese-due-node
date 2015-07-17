@@ -5,6 +5,18 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var dbName = 'via-almese-due-node';
+
+var mongoose = require('mongoose');
+var uri = 'mongodb://admin:4dmin4dmin@ds031812.mongolab.com:31812/supersonic-cosmic';
+mongoose.connect(uri);
+
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function (callback) {
+    console.log('mongolab connection opened');
+});
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 

@@ -32,7 +32,8 @@ MainViewModelFactory.prototype.make = function (language, body) {
         submitPlaceholder: this.dictionaryService.getValue('submitPlaceholder', language),
         contactFormSent: false,
         feedbackRowClass: 'hidden',
-        form: {},
+        form: body,
+        isValid: false,
     };
 
     if (body.submit) {
@@ -50,9 +51,7 @@ MainViewModelFactory.prototype.make = function (language, body) {
             model.feedbackTitle = this.dictionaryService.getValue('successTitle', language);
             model.feedbackText = this.dictionaryService.getValue('successText', language);
             model.submitButtonClass = 'disabled';
-        }
-        else {
-            model.form = body;
+            model.isValid = true;
         }
 
         model.feedbackBoxStyle = 'background: ' + background + ' !important; padding: 2em; font-size: 1.5em;';
