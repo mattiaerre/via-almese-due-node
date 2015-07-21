@@ -1,5 +1,5 @@
 ﻿function LabelRepository() {
-    
+
 };
 
 LabelRepository.prototype.findAll = function () {
@@ -32,9 +32,7 @@ LabelRepository.prototype.findAll = function () {
         },
         {
             key: 'submitPlaceholder', values: [
-                {
-                    language: 'en', value: 'Submit'
-                },
+                { language: 'en', value: 'Submit' },
                 { language: 'it', value: 'Invia' }]
         },
         {
@@ -45,27 +43,22 @@ LabelRepository.prototype.findAll = function () {
         {
             key: 'descriptionIntro', values: [
                 { language: 'it', value: 'Villetta unifamiliare, molto soleggiata, con ampio giardino, situata nel centro di Villar Dora, vicina a centro commerciale, negozi, fermata dell\'autobus, banca, municipio, P.T. e scuole, disposta su due piani cosi\' composti:' },
-                { language: 'en', value: '[TODO]' }]
+                { language: 'en', value: 'Very sunny cottage with big garden in the centre of the town. Close by shops, bus stop, town hall, post office and school. The two floors are organised as follows:' }]
         },
         {
             key: 'descriptionFirstFloor', values: [
                 { language: 'it', value: 'Primo piano: ingresso, salone, sala pranzo con cucinino, due camere e bagno. Totale mq. 100' },
-                { language: 'en', value: '[TODO]' }]
+                { language: 'en', value: 'First floor: entrance, hall, dining room with small kitchen, two bedrooms and bathroom. Sm. 100 in total' }]
         },
         {
             key: 'descriptionGroundFloor', values: [
                 { language: 'it', value: 'Piano terra: tavernetta, lavanderia, cantina, autorimessa. Totale mq. 100' },
-                { language: 'en', value: '[TODO]' }]
+                { language: 'en', value: 'Ground floor: basement space/room with cooking area, laundry room, cellar and garage. Sm. 100 in total' }]
         },
         {
             key: 'descriptionGarden', values: [
                 { language: 'it', value: 'Il giardino e\' di mq. 430 con annessa costruzione di mq. 28.' },
-                { language: 'en', value: '[TODO]' }]
-        },
-        {
-            key: 'mobile', values: [
-                { language: 'it', value: '+39 335 6303191 (Giuseppe Richetto)' },
-                { language: 'en', value: '+44 7921 508607 (Mattia Richetto)' }]
+                { language: 'en', value: 'The garden is sm. 430 large with an annex building of sm. 28.' }]
         },
         {
             key: 'email', values: [
@@ -87,30 +80,31 @@ LabelRepository.prototype.findAll = function () {
         {
             key: 'viaAlmeseDueIsOnSale', values: [
                 { language: 'it', value: 'e\' in vendita! Se vuoi maggiori informazioni e/o fissare un appuntamento per una visita puoi contattarci utilizzando il modulo sottostante.' },
-                { language: 'en', value: '[TODO]' }]
+                { language: 'en', value: 'is for sale. If you need more information and/or arrange a viewing you can reach us through the form below.' }]
         },
         {
             key: 'successTitle', values: [
+                { language: 'en', value: 'Thank you for your message' },
                 { language: 'it', value: 'Grazie per averci scritto' }]
         },
         {
             key: 'successText', values: [
+                { language: 'en', value: 'Your request has been successfully sent, we will get back to you as soon as possible.' },
                 { language: 'it', value: 'La tua richiesta e\' stata inviata con successo, ti contatteremo appena possibile.' }]
         },
         {
             key: 'errorTitle', values: [
+                { language: 'en', value: 'An error has occurred' },
                 { language: 'it', value: 'Errore durante l\'invio del modulo' }]
         },
         {
             key: 'errorText', values: [
+                { language: 'en', value: 'At least one between "Email" and "Telephone number" must be provided. Your request has not been processed, please try again.' },
                 { language: 'it', value: 'Almeno uno tra "Email" e "Numero di telefono" deve essere presente. La tua richiesta non e\' stata inviata, ti preghiamo di riprovare.' }]
         },
         {
-            key: 'blockText', values: [
-                { language: 'it', value: 'Invio in corso ...' }]
-        },
-        {
             key: 'descriptionHeading', values: [
+                { language: 'en', value: 'Description' },
                 { language: 'it', value: 'Descrizione' }]
         }
     ];
