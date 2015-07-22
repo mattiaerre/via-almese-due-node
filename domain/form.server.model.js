@@ -8,6 +8,7 @@ var formSchema = new Schema({
 	email: String,
 	telephoneNumber: String,
 	notes: String,
+	language: String,
 });
 
 module.exports = mongoose.model('Form', formSchema);

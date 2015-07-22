@@ -36,6 +36,8 @@ MainViewModelFactory.prototype.make = function (language, body) {
         isValid: false,
     };
 
+    model.form.language = language;
+
     if (body.submit) {
         model.contactFormSent = true;
         model.feedbackRowClass = '';
