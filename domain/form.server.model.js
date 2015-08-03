@@ -9,6 +9,7 @@ var formSchema = new Schema({
 	telephoneNumber: String,
 	notes: String,
 	language: String,
+	when: { type: Date, default: Date.now }
 });
 
 module.exports = mongoose.model('Form', formSchema);
