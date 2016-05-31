@@ -1,4 +1,5 @@
 ﻿var guard = require('../helpers/guard');
+var pkg = require('../package.json');
 
 function MainViewModelFactory(dictionaryService) {
     guard.argumentIsNotNull(dictionaryService, 'dictionaryService');
@@ -14,7 +15,7 @@ MainViewModelFactory.prototype.make = function (language, body) {
         language: language,
         languages: languages,
         mainTitle: this.dictionaryService.getValue('mainTitle', language),
-        version: '0.3.1', // todo: inject !?!
+        version: pkg.version,
         address: this.dictionaryService.getValue('address', language),
         year: new Date().getFullYear(),
         viaAlmeseDueIsOnSale: this.dictionaryService.getValue('viaAlmeseDueIsOnSale', language),
