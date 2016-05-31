@@ -4,11 +4,10 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
-var dbName = 'via-almese-due-node';
-
 var mongoose = require('mongoose');
-var uri = 'mongodb://admin:4dmin4dmin@ds031812.mongolab.com:31812/supersonic-cosmic';
+require('dotenv').config();
+
+var uri = process.env.MONGODB_URI;
 mongoose.connect(uri);
 
 var db = mongoose.connection;
