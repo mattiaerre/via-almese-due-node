@@ -5,7 +5,7 @@ function MainViewModelFactory(dictionaryService) {
     guard.argumentIsNotNull(dictionaryService, 'dictionaryService');
 
     this.dictionaryService = dictionaryService;
-};
+}
 
 MainViewModelFactory.prototype.make = function (language, body) {
     //var languages = [{ value: 'en', label: 'English' }, { value: 'it', label: 'Italiano' }];
