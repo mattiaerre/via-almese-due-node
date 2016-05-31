@@ -4,7 +4,7 @@ var LabelRepository = require('../domain/label-repository');
 var DictionaryService = require('../domain/dictionary-service');
 var MainViewModelFactory = require('../domain/main-viewmodel-factory');
 
-var Form = require('../domain/form.server.model')
+var Form = require('../domain/form.server.model');
 
 router.get('/', function (req, res) {
     // todo: refactor please !?!
@@ -42,7 +42,7 @@ router.post('/:language', function (req, res) {
                 console.log('a form w/ id: ' + form._id + ' has been successfully saved');
                 res.render('index', model);
             }
-        })
+        });
     }
     else {
         res.render('index', model);

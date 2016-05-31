@@ -1,5 +1,5 @@
 ﻿function Guard() {
-};
+}
 
 Guard.prototype.argumentIsNotNull = function (argument, name) {
     if (typeof argument === 'undefined') {

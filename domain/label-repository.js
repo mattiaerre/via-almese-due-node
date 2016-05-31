@@ -1,6 +1,5 @@
 ﻿function LabelRepository() {
-
-};
+}
 
 LabelRepository.prototype.findAll = function () {
     return [
@@ -80,7 +79,7 @@ LabelRepository.prototype.findAll = function () {
             key: 'characteristics', values: [
                 { language: 'it', value: ['Casa indipendente', 'Due ingressi da via pubblica', 'Ampio giardino di mq. 430', 'Due garage', 'Cantina', 'Riscaldamento indipendente a metano', 'Buono stato'] },
                 { language: 'en', value: ['Independent house', 'Two entrances from public street', 'Big garden of sm. 430', 'Two garages', 'Basement', 'Methane autonomous heating', 'Good condition'] },
-                { language: 'fr', value: ['Maison independante','Deux Entrées par la vie publique','Tres grand jardin de 430 mq','Deux garages','Cave','Chauffage independant à méthane','Bon état'] }]
+                { language: 'fr', value: ['Maison independante', 'Deux Entrées par la vie publique', 'Tres grand jardin de 430 mq', 'Deux garages', 'Cave', 'Chauffage independant à méthane', 'Bon état'] }]
         },
         {
             key: 'viaAlmeseDueIsOnSale', values: [
