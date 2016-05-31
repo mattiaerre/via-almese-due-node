@@ -3,7 +3,8 @@
   "version": "0.3.3",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "nodemon": "nodemon server.js"
   },
   "description": "via-almese-due-node",
   "author": {
@@ -25,8 +26,6 @@
     "vash": "^0.11.3"
   },
   "devDependencies": {
-    "browser-sync": "^2.7.13",
-    "gulp": "^3.9.0",
-    "gulp-nodemon": "^2.0.3"
+    "nodemon": "^1.9.2"
   }
 }
